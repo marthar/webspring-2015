@@ -80,9 +80,6 @@
 <h1>Order of Business</h1>
 	<ul>
 		<li class="slide">
-			<h3>Review Homework</h3>
-		</li>
-		<li class="slide">
 			<h3>History of Type on the Web</h3>
 		</li>
 		<li class="slide">
@@ -110,13 +107,6 @@
 </article>
 
 
-<article class='slide slide-subhead'>
-<h1>Homework</h1>
-<h2><a href="homework-monday.html">Monday </a>|<a href="homework-friday.html"> Friday</a></h2>
-</article>
-<article class='slide slide-accent'>
-	<h1>History of Type on the Web</h1>
-</article>
 
 <article class="slide slide-list">
 <h1>In the past you were limited too...</h1>
@@ -210,103 +200,7 @@
 		</ul>
 </article>
 
-<article class='slide slide-accent'>
-	<h1>Getting your fonts into your site</h1>
-</article>	
 
-<article class='slide slide-subhead'>
-	<h2><br/>Browser Support<br/><br/></h2>
-	<img src='images/browsers.png'/>
-</article>
-
-<article class='slide slide-list'>
-	<h1>@font-face</h1>
-		<ul>
-		<li class="slide">
-			<h3>Adds “font-family” fonts you can use with CSS</h3>
-		</li>
-		<li class="slide">
-			<h3>Currently you need to provide 4 different versions of the same font to cover all browsers</h3>
-		</li>
-		<li class="slide">
-			<h3>Don’t worry about the specifics use a generator like fontsquirrel.com or use a hosting service</h3>
-		</li>
-		</ul>
-</article>
-
-<article class='slide slide-list'>
-	<h2>Raw Code</h2>
-		<pre>@font-face {
-	font-family: "Your typeface";
-	src: url("type/filename.eot");
-	src: local("☺"),
-		url("type/filename.woff") format("woff"),
-		url("type/filename.otf") format("opentype"),
-		url("type/filename.svg#filename") format("svg");
-}
-@font-face {
-	font-family: "Your italic typeface";
-	src: url("type/filename-ital.eot");
-	src: local("☺"),
-		url("type/filename-ital.woff") format("woff"),
-		url("type/filename-ital.otf") format("opentype"),
-		url("type/filename-ital.svg#filename-ital") format("svg");
-}</pre>
-	<p><em>Don’t write this - cut and paste from your generator</em></p>
-</article>
-
-
-<article class='slide slide-list'>
-	<h2>Link Code</h2>
-		<pre>&lt;link href='http://fonts.googleapis.com/css?family=FontName&v2' rel='stylesheet' type='text/css'&gt;</pre>
-	<p><em>Example from Google Fonts</em></p>
-</article>
-
-
-
-<article class='slide slide-list'>
-	<h2>Your CSS</h2>
-		<pre>h2 { font-family: "Your typeface", Georgia, serif; }</pre>
-	<p><em>Style as Usual</em></p>
-</article>
-
-
-
-<article class='slide slide-list'>
-<h2>Exercise 1: Load Some Google Fonts</h2>
-<p>Load a different font for your H1, and your P from <a href='http://www.google.com/webfonts'>Google Fonts</a></p>
-<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" data-language='html'>
-
-<html>
-<head>
-
-
-</head>
-<body>
-
-<section id='content'>
-  <article class='blog-post'>
-    <h1>Blog Post 1</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
-  </article>
-  <article class='blog-post'>
-    <h1>Blog Post 1</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
-  </article>
-
-</section>
-
-</body>
-</html>
-</textarea>
-</article>
-
-<article class='slide slide-list'>
-<h2>Exercise 2: Download and implement a FontSquirrel Font</h2>
-<p>Add League Gothic to your most recent version of Cats vs Dogs then synch/push to github<a href='http://www.fontsquirrel.com/fonts/League-Gothic'>League Gothic</a></p>
-</article>
 
 
 <article class='slide slide-accent'>
@@ -480,6 +374,8 @@
 
 <article style='background-image:url(images/nytimes.png);' class='slide slide-background'>
 </article>
+
+
 
 <article class='slide slide-accent'>
 	<h1>Combining Fonts</h1>
@@ -711,6 +607,100 @@ But most importantly, it will make your site easier to read and navigate for use
 <h1><a href="http://www.jimgodfreydesign.com/typeSins.pdf">Thirty-Four Typographic Sins by Jim Godfrey</a></h1>
 </article>
 
+<article class='slide slide-accent'>
+	<h1>Getting your fonts into your site</h1>
+</article>	
+
+<article class='slide slide-subhead'>
+	<h2><br/>Browser Support<br/><br/></h2>
+	<img src='images/browsers.png'/>
+</article>
+
+<article class='slide slide-list'>
+	<h1>@font-face</h1>
+		<ul>
+		<li class="slide">
+			<h3>Adds “font-family” fonts you can use with CSS</h3>
+		</li>
+		<li class="slide">
+			<h3>Currently you need to provide 4 different versions of the same font to cover all browsers</h3>
+		</li>
+		<li class="slide">
+			<h3>Don’t worry about the specifics use a generator like fontsquirrel.com or use a hosting service</h3>
+		</li>
+		</ul>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Raw Code</h2>
+		<pre>@font-face {
+	font-family: "Your typeface";
+	src: url("type/filename.eot");
+	src: local("☺"),
+		url("type/filename.woff") format("woff"),
+		url("type/filename.otf") format("opentype"),
+		url("type/filename.svg#filename") format("svg");
+}
+@font-face {
+	font-family: "Your italic typeface";
+	src: url("type/filename-ital.eot");
+	src: local("☺"),
+		url("type/filename-ital.woff") format("woff"),
+		url("type/filename-ital.otf") format("opentype"),
+		url("type/filename-ital.svg#filename-ital") format("svg");
+}</pre>
+	<p><em>Don’t write this - cut and paste from your generator</em></p>
+</article>
+
+
+<article class='slide slide-list'>
+	<h2>Link Code</h2>
+		<pre>&lt;link href='http://fonts.googleapis.com/css?family=FontName&v2' rel='stylesheet' type='text/css'&gt;</pre>
+	<p><em>Example from Google Fonts</em></p>
+</article>
+
+
+
+<article class='slide slide-list'>
+	<h2>Your CSS</h2>
+		<pre>h2 { font-family: "Your typeface", Georgia, serif; }</pre>
+	<p><em>Style as Usual</em></p>
+</article>
+
+
+
+<article class='slide slide-list'>
+<h2>Exercise 1: Load Some Google Fonts</h2>
+<p>Load a different font for your H1, and your P from <a href='http://www.google.com/webfonts'>Google Fonts</a></p>
+<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" data-language='html'>
+
+<html>
+<head>
+
+
+</head>
+<body>
+
+<section id='content'>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+
+</section>
+
+</body>
+</html>
+</textarea>
+</article>
+
+
 
 <article  style='background-image:url(images/letteringjs.png);' class='slide slide-background-content-footer'>
 <div class="background-padding"><div class="background-wrapper">
@@ -864,6 +854,10 @@ Font Effects....</h2>
 		</ul>
 </article>
 
+<article class='slide slide-list'>
+<h2>Exercise 3: Download and implement a FontSquirrel Font</h2>
+<p>Add League Gothic to your most recent version of Cats vs Dogs then synch/push to github<a href='http://www.fontsquirrel.com/fonts/League-Gothic'>League Gothic</a></p>
+</article>
 
 
 <article class='slide slide-homework'>
